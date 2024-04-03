@@ -1,0 +1,27 @@
+class Parent {
+    String name;
+    Parent(String name) {
+        this.name = name;
+    }
+    void display() {
+        System.out.println("Parent name: " + name);
+    }
+}
+class Child extends Parent {
+    int age;
+    Child(String name, int age) {
+        super(name);
+        this.age = age;
+    }
+    void displayInfo() {
+        super.display();
+        System.out.println("Child age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child child = new Child("Alice", 10);
+        child.displayInfo();
+    }
+}

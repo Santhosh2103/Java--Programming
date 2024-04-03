@@ -1,0 +1,17 @@
+public class string{
+    public static void main(String[] args) {
+
+        StringBuilder stringBuilder = new StringBuilder("Hello");
+        stringBuilder.append(" ");
+        stringBuilder.append("World");
+        stringBuilder.append("!");
+        System.out.println("StringBuilder Example:");
+        System.out.println(stringBuilder.toString());
+
+        StringBuffer stringBuffer = new StringBuffer("Java");
+        stringBuffer.append(" is");
+        stringBuffer.append(" awesome");
+        System.out.println("\nStringBuffer Example:");
+        System.out.println(stringBuffer.toString());
+    }
+}

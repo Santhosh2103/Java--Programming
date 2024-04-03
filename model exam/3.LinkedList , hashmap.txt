@@ -1,0 +1,41 @@
+import java.util.LinkedList;
+import java.util.TreeSet;
+import java.util.HashMap;
+
+public class Example {
+    public static void main(String[] args) {
+
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("Apple");
+        linkedList.add("Banana");
+        linkedList.add("Orange");
+
+        System.out.println("LinkedList Example:");
+        for (String fruit : linkedList) {
+            System.out.println(fruit);
+        }
+
+
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        treeSet.add(5);
+        treeSet.add(3);
+        treeSet.add(8);
+        treeSet.add(1);
+
+        System.out.println("\nTreeSet Example:");
+        for (Integer num : treeSet) {
+            System.out.println(num);
+        }
+
+
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        hashMap.put("John", 25);
+        hashMap.put("Alice", 30);
+        hashMap.put("Bob", 20);
+
+        System.out.println("\nHashMap Example:");
+        for (String name : hashMap.keySet()) {
+            System.out.println("Name: " + name + ", Age: " + hashMap.get(name));
+        }
+    }
+}
